@@ -1,0 +1,4 @@
+﻿  server_main.cpp
+c:\users\동훈\desktop\finalproject\graduateproject\server\2017server\server_main.cpp(271): warning C4244: '인수': 'unsigned __int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\동훈\desktop\finalproject\graduateproject\server\2017server\server_main.cpp(276): warning C4244: '인수': 'unsigned __int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  2017Server.vcxproj -> C:\Users\동훈\Desktop\FinalProject\GraduateProject\Server\x64\Debug\2017Server.exe

@@ -1,6 +1,5 @@
 // LabProject07-1m.cpp : 응용 프로그램에 대한 진입점을 정의합니다.
 //
-
 #include "stdafx.h"
 #include "LabProject07-1m.h"
 #include "GameFramework.h"
@@ -42,6 +41,7 @@ DWORD		in_packet_size = 0;
 int		saved_packet_size = 0;
 int		g_myid;
 
+char SERVERIP[10];
 
 
 
@@ -194,7 +194,9 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	{
 		return FALSE;
 	}
-
+	
+	std::cout << "IP입력:";
+	std::cin >> SERVERIP;
 
 	WSADATA	wsadata;
 	WSAStartup(MAKEWORD(2, 2), &wsadata);
@@ -205,17 +207,17 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	ZeroMemory(&ServerAddr, sizeof(SOCKADDR_IN));
 	ServerAddr.sin_family = AF_INET;
 	ServerAddr.sin_port = htons(MY_SERVER_PORT);
-	ServerAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+	ServerAddr.sin_addr.s_addr = inet_addr(SERVERIP);
 
 	int Result = WSAConnect(g_mysocket, (sockaddr *)&ServerAddr, sizeof(ServerAddr), NULL, NULL, NULL, NULL);
 
 	WSAAsyncSelect(g_mysocket, main_window_handle, WM_SOCKET, FD_CLOSE | FD_READ);
-/*
+
 	send_wsabuf.buf = send_buffer;
 	send_wsabuf.len = BUF_SIZE;
 	recv_wsabuf.buf = recv_buffer;
 	recv_wsabuf.len = BUF_SIZE;
-*/
+
 	hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_LABPROJECT071M));
 
 	// 기본 메시지 루프입니다.

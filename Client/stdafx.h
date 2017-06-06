@@ -45,3 +45,4 @@
 
 
 #pragma comment (lib, "ws2_32.lib")
+#pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console")

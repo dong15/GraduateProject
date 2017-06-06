@@ -1,11 +1,3 @@
 ﻿  failed writing C:\Users\�좯E��\Desktop\FinalProject\GraduateProject\Client\Debug\PS.fxo
   failed writing C:\Users\�좯E��\Desktop\FinalProject\GraduateProject\Client\Debug\VS.fxo
-  LabProject07-1m.cpp
-c:\users\동훈\desktop\finalproject\graduateproject\client\labproject07-1m.cpp(208): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: 'inet_addr' 선언을 참조하십시오.
-c:\users\동훈\desktop\finalproject\graduateproject\client\labproject07-1m.cpp(212): warning C4996: 'WSAAsyncSelect': Use WSAEventSelect() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2699): note: 'WSAAsyncSelect' 선언을 참조하십시오.
-c:\users\동훈\desktop\finalproject\graduateproject\client\labproject07-1m.cpp(185): warning C4101: 'hwnd' :참조되지 않은 지역 변수입니다.
-c:\users\동훈\desktop\finalproject\graduateproject\client\labproject07-1m.cpp(318): warning C4101: 'wmEvent' :참조되지 않은 지역 변수입니다.
-c:\users\동훈\desktop\finalproject\graduateproject\client\labproject07-1m.cpp(318): warning C4101: 'wmId' :참조되지 않은 지역 변수입니다.
   LabProject07-1m.vcxproj -> C:\Users\동훈\Desktop\FinalProject\GraduateProject\Client\Debug\LabProject07-1m.exe
